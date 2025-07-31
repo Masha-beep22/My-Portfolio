@@ -1,0 +1,823 @@
+/* Reset default browser styles and set box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base body styles: font, background, and min height */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Navbar styles: sticky, blurred, rounded, and spaced */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(100px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+/* Logo text with gradient color */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #7bd1eb, #99a24b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+/* Logo image: circular, bordered, and aligned */
+.logo img {
+    height: 40px;
+    width: 40px;
+    object-fit: unset;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Logo text next to image */
+.logo-text {
+    font-size: 1.5rem;
+    color: #333;
+    margin-left: 10px;
+    font-weight: bold;
+    padding-left: 20px;
+    vertical-align: middle;
+}
+
+/* Navigation links: horizontal layout and spacing */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Nav link styles and hover effect */
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: right;
+    vertical-align: middle;
+}
+
+/* Nav link hover color */
+.nav-links a:hover {
+    color: #00da49;
+}
+
+/* Underline animation for nav links on hover */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Hide mobile menu by default */
+.mobile-menu {
+    display: none;
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
+        font-size: 3rem;
+    }
+}
+
+/* Main content spacing */
+main {
+    margin-top: 30px;
+}
+
+/* Hero section: background, padding, centering, and shadow */
+.hero {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    margin: 2rem 0;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: white;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/* Responsive hero section for large screens */
+@media (min-width: 1200px) {
+    .hero {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+}
+
+/* Responsive hero section for smaller screens */
+@media (max-width: 1199px) {
+    .hero {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+/* Hero heading animation and size */
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: slideUp 0.8s ease;
+}
+
+/* Hero paragraph animation and spacing */
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    animation: slideUp 0.8s ease 0.2s both;
+}
+
+/* Call-to-action button styles and animation */
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    animation: slideUp 0.8s ease 0.4s both;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* CTA button hover effect */
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Section container: background, padding, shadow, and centering */
+.section {
+    background: white;
+    margin: 2rem 0;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, margin 0.3s ease, width 0.3s ease;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/* Responsive section for large screens */
+@media (min-width: 1200px) {
+    .section {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+}
+
+/* Responsive section for smaller screens */
+@media (max-width: 1199px) {
+    .section {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+/* Section hover effect */
+.section:hover {
+    transform: translateY(-5px);
+}
+
+/* Section heading with gradient text */
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* About section: grid layout for image and text */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+/* Profile image: circular, centered, and gradient border */
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+/* Profile image: cover and circular */
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+/* Education timeline: vertical line and items */
+.education-timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.education-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+}
+
+/* Education item: card style and timeline dot */
+.education-item {
+    position: relative;
+    margin-bottom: 2rem;
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-left: 1rem;
+}
+
+.education-item::before {
+    content: '';
+    position: absolute;
+    left: -1.75rem;
+    top: 1.5rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #667eea;
+    border: 3px solid white;
+}
+
+/* CV download button styles */
+.cv-download {
+    display: inline-block;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.cv-download:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Skills grid: responsive columns and spacing */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Skill card: background, color, padding, and hover effect */
+.skill-card {
+    background: rgb(106, 106, 205);
+    color: rgb(117, 83, 83);
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+}
+
+/* Skill card heading size */
+.skill-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.skill-card h4 {
+    color: #4a5568;
+    margin-bottom: 8px;
+}
+
+.skill-card p {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0;
+}
+
+/* Hide skill card details until hover */
+.skill-card p,
+.skill-card .hover-text {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.skill-card:hover p,
+.skill-card:hover .hover-text {
+    opacity: 1;
+}
+
+/* Interests grid: responsive columns */
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Interest card: gradient background and hover effect */
+.interest-card {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.interest-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 107, 107, 0.4);
+}
+
+/* Projects grid: responsive columns */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Project card: card style and hover effect */
+.project-card {
+    background: #f8f9fa;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Project image area: gradient background and centering */
+.project-image {
+    height: 200px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+}
+
+/* Project content padding */
+.project-content {
+    padding: 1.5rem;
+}
+
+/* Project link/button styles */
+.project-link {
+    display: inline-block;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    transform: translateY(-2px);
+}
+
+/* Contact form container */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Form group spacing */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Form label styles */
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input and textarea styles */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Input focus effect */
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 10px rgba(102, 126, 234, 0.2);
+}
+
+/* Submit button styles */
+.submit-btn {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Contact info grid and card styles */
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-item {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item h3 {
+    color: #667eea;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.contact-item a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #667eea;
+}
+
+/* --- Expandable Section Styles --- */
+
+/* Container for portfolio content */
+.portfolio-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* Intro text styling */
+.intro-text {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+/* Hide the checkbox for expandable section */
+.expand-toggle {
+    display: none;
+}
+
+/* Expand/collapse button styling */
+.expand-btn {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto 20px auto;
+    width: fit-content;
+    text-decoration: none;
+    user-select: none;
+}
+/* Button hover and active effects */
+.expand-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.expand-btn:active {
+    transform: translateY(0);
+}
+
+/* Arrow icon transition for expand/collapse */
+.arrow {
+    transition: transform 0.3s ease;
+    font-size: 1.2em;
+}
+
+/* Rotate arrow when expanded */
+.expand-toggle:checked + .expand-btn .arrow {
+  transform: rotate(180deg);
+}
+
+/* Expandable content container: hidden by default */
+.detailed-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease, padding 0.3s ease;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 15px;
+}
+
+/* Show content when expanded */
+.expand-toggle:checked + .expand-btn + .detailed-content {
+    max-height: 1200px;
+    padding: 30px;
+}
+
+/* Change button text when expanded/collapsed */
+.expand-toggle:checked + .expand-btn .btn-text::before {
+    content: "Show less";
+}
+
+.expand-toggle:not(:checked) + .expand-btn .btn-text::before {
+    content: "Want to know more about this unique combo?";
+}
+
+.btn-text {
+    font-size: 0;
+}
+
+.btn-text::before {
+    font-size: 1rem;
+}
+
+/* Detailed content heading and paragraph styles */
+.detailed-content h3 {
+    color: #4a5568;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.detailed-content p {
+    color: #2d3748;
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+/* Highlighted text style */
+.highlight {
+    background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* Skills grid for expandable section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Skill card for expandable section */
+.skill-card {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+}
+
+.skill-card h4 {
+    color: #4a5568;
+    margin-bottom: 8px;
+}
+
+.skill-card p {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+    .portfolio-container {
+        padding: 20px;
+    }
+    
+    .intro-text {
+        font-size: 1em;
+    }
+
+    .expand-btn {
+        padding: 15px 25px;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Demo notice styling */
+.demo-notice {
+    background: #e3f2fd;
+    border: 1px solid #bbdefb;
+    color: #1565c0;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Slide up animation for hero section */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer styles: blurred background and centered text */
+footer {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #333;
+    position: relative;
+    word-break: break-word;
+    padding: 0 10px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 2px;
+}
+
+/* Responsive adjustments for section-title */
+@media (max-width: 600px) {
+    .section-title {
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+        padding: 0 5px;
+    }
+    .section-title::after {
+        width: 40px;
+        height: 3px;
+        bottom: -7px;
+    }
+}
+
+/* Match section-title size to hero h1 on large screens */
+@media (min-width: 769px) {
+    .section-title {
+        font-size: 3rem;
+    }
+}

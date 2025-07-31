@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George Macharia - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- The head section sets up meta tags, page title, and links to the CSS file -->
+</head>
+<body>
+        <nav class="navbar bg-light" >
+            <div class="logo">
+                <img src="Images/IMG_5425.jpg">
+                My Portfolio
+            </div>
+            <ul class="nav-links" ms-auto>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu">☰</button>
+        </nav>
+
+        <!-- Navigation bar with logo, links, and a mobile menu button -->
+
+        <!-- HERO SECTION -->
+
+    <main class="container">
+        <section id="home" class="hero">
+            <h1>Hello, I'm George Macharia</h1>
+            <p>Electronics Engineer | Passionate Developer | Problem Solver | Tech Enthusiast</p>
+            <a href="#contact" class="cta-button">Get In Touch</a>
+        </section>
+        <!-- Hero section introduces the portfolio owner and provides a call-to-action button -->
+
+        <!-- ABOUT ME SECTION -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <div class="portfolio-container">
+                <div class="profile-image">
+                    <img src="Images/IMG_5425.jpg" alt="George Macharia Profile Photo">
+                </div>
+        
+        <!-- BRIEF INTRO -->
+
+        <div class="intro-text">
+            <strong>Welcome to my portfolio! 👋</strong> I'm an electronics engineering student as well as software development student - a rare blend of hardware logic and software creativity. A tech enthusiast, and passionate problem solver. I live at the intersection of hardware and code, where <span class="highlight">innovation happens and ideas come to life.</span> This is where LEDs blink to life with a few lines of code, where microcontrollers respond like magic, and where ideas evolve into real-world solutions. Whether I'm soldering components or debugging Python scripts, I'm driven by a love for building things that work — and work smart.
+        </div>
+        <!-- Short introduction about the portfolio owner -->
+
+        <!-- EXPANDABLE DETAILS ON MYSELF -->
+        
+        <input type="checkbox" id="about-toggle" class="expand-toggle">
+        <label for="about-toggle" class="expand-btn">
+            <span class="btn-text">Wanna know more?</span>
+            <span class="arrow">▼</span>
+        </label>
+
+        <div class="detailed-content">
+            <h3>🔬 The Beautiful Marriage of Hardware & Software - My version</h3>
+            <p>
+                Ever wondered what happens when hardware meets software? That's exactly where I live – at that electrifying intersection where <strong>Electronics Engineering</strong> sparks up with <strong>Programming</strong>! I'm that person who gets genuinely excited about both the microscopic dance of electrons through circuits <em>and</em> the elegant logic of algorithms flowing through code. <strong>It's like being bilingual in the language of technology!</strong> 🌐⚡💻</p>
+            <p>
+                While most people see electronics and programming as separate worlds, I see them as the <span class="highlight">ultimate power couple</span>. My electronics background gives me the foundation to understand how data flows at the hardware level, why sensors behave the way they do, and what happens when you push a microcontroller to its limits. Meanwhile, my programming skills give me the superpowers to make that hardware dance, create intuitive interfaces, and build bridges between the physical and digital worlds.
+            </p>
+
+            <p>
+                When I'm designing a smart IoT system, I'm not just thinking about clean code or efficient circuits separately – I'm seeing the <span class="highlight">complete picture</span> where a well-chosen resistor meets a perfectly timed interrupt, where sensor data flows seamlessly into cloud services, and where hardware limitations inspire creative software solutions.
+            </p>
+
+            <h3>⚡ What Makes This Combination So Powerful?</h3>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h4>🔧 Deep System Understanding</h4>
+                    <p>I debug at every level - from checking voltage levels to optimizing algorithms</p>
+                </div>
+                
+                <div class="skill-card">
+                    <h4>🌐 IoT & Embedded Mastery</h4>
+                    <p>Making tiny computers talk to the cloud while sipping power like a hummingbird</p>
+                </div>
+                
+                <div class="skill-card">
+                    <h4>⚡ Real-time Problem Solving</h4>
+                    <p>When microseconds matter and hardware meets software constraints</p>
+                </div>
+                
+                <div class="skill-card">
+                    <h4>🎨 Creative Innovation</h4>
+                    <p>Turning "impossible" ideas into working prototypes that actually scale</p>
+                </div>
+            </div>
+
+            <p style="margin-top: 25px;">
+                Whether it's making LEDs respond to real-time data, building embedded systems that fit in your palm but pack serious intelligence, or debugging issues that exist right at that magical boundary between electrons and algorithms – <strong>this is where innovation happens, and I absolutely love bringing these worlds together to create something extraordinary!</strong> ✨
+            </p>
+
+            <!-- Show Less Button - appears at bottom when expanded -->
+            <label for="about-toggle" class="show-less-btn"></label>
+                <span>Show less</span>
+                <span class="arrow">▲</span>
+            </label>
+        </div>
+
+    </div>
+        </section>
+        <!-- About section with expandable details and skills highlights -->
+
+        <section id="skills" class="section">
+            <h2>Programming Languages</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <div class="hover-text">
+                        <p>ES6+, Node.js, React</p>
+                    </div>   
+                </div>
+                <div class="skill-card">
+                    <h3>Python</h3>
+                    <p>Django, Flask, Data Science</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Java</h3>
+                    <p>Spring Boot, Android</p>
+                </div>
+                <div class="skill-card">
+                    <h3>C++</h3>
+                    <p>System Programming</p>
+                </div>
+                <div class="skill-card">
+                    <h3>TypeScript</h3>
+                    <p>Angular, Vue.js</p>
+                </div>
+                <div class="skill-card">
+                    <h3>SQL</h3>
+                    <p>MySQL, PostgreSQL</p>
+                </div>
+            </div>
+        </section>
+        <!-- Skills section listing programming languages and frameworks -->
+
+        <section id="education" class="section">
+            <h2>Educational Background</h2>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <h3>Bachelor of Science in Electrical and Electronics Engineering</h3>
+                    <p><strong>Meru University of Science and Technology</strong> | 2022 - Current</p>
+                    <p>Relevant coursework: Circuit Analysis, Digital Electronics, Microprocessors & Microcontrollers, Control Systems, Power Systems, Signal Processing, Embedded Systems, Communication Systems</p>
+                    <p>GPA: 3.8/4.0</p>
+                </div>
+                <div class="education-item">
+                    <h3>High School Diploma</h3>
+                    <p><strong>Nyahururu High School</strong> | 2016 - 2020</p>
+                    <p>Developed deep interest and love for three core subjects, Mathematics, Physics and Chemistrys</p>
+                </div>
+                <div class="education-item">
+                    <h3>Certifications</h3>
+                    <p>• CCNA</p>
+                    <p>• SRIP internship programme</p>
+                    <p>• Royal Academy of Engineering(UK) training programme</p>
+                </div>
+            </div>
+            <a href="Documents/GEORGE MACHARIA.pdf" class="cv-download" download>📄 Download CV</a>
+        </section>
+   
+
+        <section id="interests" class="section">
+            <h2>Interests</h2>
+            <div class="interests-grid">
+                <div class="interest-card">
+                    <h3>🤖 Artificial Intelligence</h3>
+                    <p>Fascinated by machine learning algorithms and their potential to revolutionize industries. Currently exploring deep learning and neural networks.</p>
+                </div>
+                <div class="interest-card">
+                    <h3>🌐 Ethical Hacking</h3>
+                    <p>Interested in cybersecurity and ethical hacking—exploring how systems can be tested for vulnerabilities to strengthen their defenses and ensure data protection. Enjoy learning about penetration testing, network security, and responsible disclosure.</p>
+                </div>
+                <div class="interest-card">
+                    <h3>🛡️ Penetration Testing</h3>
+                    <p>Passionate about simulating cyberattacks to identify vulnerabilities in systems and applications. I enjoy using ethical hacking tools and methodologies to strengthen security and ensure robust protection against real-world threats.</p>
+                </div>
+                <div class="interest-card">
+                    <h3>☁️ Web Development </h3>
+                    <p>Enthusiastic about building modern web applications and cloud-based solutions. I enjoy designing scalable, robust systems using microservices and cloud architecture, ensuring seamless experiences for users worldwide.</p>
+                </div>
+                <div class="interest-card">
+                    <h3>💻 Software Development</h3>
+                    <p>
+                        I enjoy building software that connects hardware and digital worlds. Whether it's embedded systems or web apps, I focus on creating reliable, efficient, and user-friendly solutions using modern technologies.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Interests section with cards for each area of interest -->
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">🚀</div>
+                    <div class="project-content">
+                        <h3>Smart Trolley System</h3>
+                        <p>
+                            A full-stack e-commerce solution using React, Node.js, and MongoDB. Features smart stock management that analyzes buying trends to optimize inventory and keep popular items available. Streamlines inventory control for a better shopping experience.
+                        </p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">📊</div>
+                    <div class="project-content">
+                        <h3>Data Visualization Dashboard</h3>
+                        <p>Interactive dashboard for data analysis using Python, D3.js, and Flask. Processes large datasets and provides real-time insights.</p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">🎮</div>
+                    <div class="project-content">
+                        <h3>Mobile Game App</h3>
+                        <p>Cross-platform mobile game developed with React Native. Features include multiplayer functionality and real-time leaderboards.</p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects section with cards describing each project and a link to view more -->
+
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <div class="contact-form">
+                <form onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+
+         <section id="contact">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="demo-notice">
+                <strong>Contact Information</strong> - Feel free to reach out through any of these channels;
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>📧 Email</h3>
+                    <p><a href="mailto:mashgeorge254@gmail.com">mashgeorge254@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>💼 LinkedIn</h3>
+                    <p><a href="https://linkedin.com/in/george-macharia-b27835301" target="_blank">linkedin.com/in/george-macharia-b27835301</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>🐙 GitHub</h3>
+                    <p><a href="https://github.com/Masha-beep22" target="_blank">github.com/Masha-beep22</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>📱 Phone</h3>
+                    <p><a href="tel:+254797233865">(254) 797 233 865</a></p>
+                </div>
+            </div>
+        </section>
+        <!-- Additional contact section with direct links to email, LinkedIn, GitHub, and phone -->
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 George Macharia. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer with copyright -->
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        // Enables smooth scrolling when navigation links are clicked
+
+        // Form submission handler
+        function handleSubmit(event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData);
+            
+            // Simulate form submission
+            alert(`Thank you, ${data.name}! Your message has been sent. I'll get back to you soon.`);
+            event.target.reset();
+        }
+        // Handles contact form submission and displays a thank you alert
+
+        // CV download function
+        function downloadCV() {
+            // This would typically trigger a download of your actual CV file
+            alert('CV download would start here. Please replace this with your actual CV file link.');
+        }
+        // Placeholder function for downloading the CV
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+        // Changes header background on scroll (note: there is no <header> in the HTML, so this may not have any effect)
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'slideUp 0.6s ease forwards';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+        // Adds a slide-up animation to each section when it enters the viewport
+
+        // Mobile menu toggle
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+        // Toggles the navigation links for mobile view when the menu button is clicked
+    </script>
+</body>
+</html>
