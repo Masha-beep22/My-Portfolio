@@ -13,7 +13,7 @@ CV Download: Direct download link for resume
 Smooth Animations: CSS animations and scroll-triggered effects
 
 🚀 Live Demo
-Visit the live portfolio: [Your Portfolio URL]
+Visit the live portfolio: https://github.com/Masha-beep22/My-Portfolio.git
 
 📁 Project Structure
 
@@ -41,14 +41,6 @@ Flexbox and Grid layouts
 CSS animations and transitions
 Backdrop filters and glass morphism
 Responsive design with media queries
-
-
-JavaScript:
-
-Smooth scrolling navigation
-Form handling
-Mobile menu toggle
-Intersection Observer API for scroll animations
 
 
 Modern CSS Features:
@@ -89,7 +81,8 @@ Basic understanding of HTML/CSS/JavaScript (for modifications)
 Installation
 
 Clone the repository
-bashgit clone https://github.com/Masha-beep22/portfolio-website.git
+
+git clone https://github.com/Masha-beep22/portfolio-website.git
 cd portfolio-website
 
 Open the project
@@ -97,10 +90,12 @@ Open the project
 Simply open index.html in your web browser
 Or use a local server (recommended):
 
-bash# Using Python
+Using Python
+
 python -m http.server 8000
 
-# Using Node.js
+Using Node.js
+
 npx serve .
 
 # Using Live Server extension in VS Code
