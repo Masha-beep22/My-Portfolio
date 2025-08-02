@@ -197,9 +197,11 @@ Edge 79+
  Add PWA capabilities
 
 🤝 Contributing
+
 While this is a personal portfolio, suggestions and improvements are welcome!
 
 Fork the repository
+
 Create a feature branch (git checkout -b feature/improvement)
 Commit your changes (git commit -am 'Add new feature')
 Push to the branch (git push origin feature/improvement)
@@ -209,12 +211,17 @@ Create a Pull Request
 George Macharia
 
 Email: mashgeorge254@gmail.com
+
 LinkedIn: linkedin.com/in/george-macharia-b27835301
+
 GitHub: github.com/Masha-beep22
+
 Phone: +254 797 233 865
 
 📄 License
+
 This project is open source and available under the MIT License.
+
 🙏 Acknowledgments
 
 Design inspiration from modern portfolio trends
