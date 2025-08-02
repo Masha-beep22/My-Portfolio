@@ -14,16 +14,24 @@ Smooth Animations: CSS animations and scroll-triggered effects
 
 🚀 Live Demo
 Visit the live portfolio: [Your Portfolio URL]
+
 📁 Project Structure
+
 portfolio-website/
+
 │
 ├── index.html          # Main HTML file
+
 ├── style.css           # Comprehensive CSS styling
+
 ├── Images/
 │   └── IMG_5425.jpg    # Profile photo
+
 ├── Documents/
 │   └── GEORGE MACHARIA.pdf  # Resume/CV file
+
 └── README.md           # This file
+
 🛠️ Technologies Used
 
 HTML5: Semantic markup and structure
